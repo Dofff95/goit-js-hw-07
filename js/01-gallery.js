@@ -21,16 +21,16 @@ function selectImg(evt) {
   }
   console.log(evt.target);
 }
+
 const instance = basicLightbox.create(
-  `
-      <img src="" width="1280" height="auto">
-  `,
+  ` <img src="" width="1280" height="auto">  `,
   {
     onShow: (instance) => {
       window.addEventListener("keydown", escKeyPress);
     },
   }
 );
+
 function escKeyPress(evt) {
   if (evt.code !== "Escape") return;
   instance.close();
