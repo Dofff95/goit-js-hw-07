@@ -19,7 +19,6 @@ function selectImg(evt) {
   if (evt.target === evt.currentTarget) {
     return;
   }
-  console.log(evt.target);
 }
 
 const instance = basicLightbox.create(
